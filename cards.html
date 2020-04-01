@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+        <title>My Webpage</title>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="#">Project0</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item ">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="list.html">Genres</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="cards.html">Suggestions</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About Me</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+    </head>
+    <body>
+      <main class="container p-5">
+        {% extends 'layout.html' %}
+        {% block main %}
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="card" id='card-deck'>
+              <div class="card-body">
+                <h5 class="card-title">Books by Sarah J. Mass</h5>
+                <p class="card-text">Court of Thorns and Roses series, Throne of Glass series, Crecent city"</p>
+                <a href="https://sarahjmaas.com/"" class="btn btn-primary">Visit Page</a>
+              </div>
+            </div>
+          </div>
+        </br>
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Favourite Classics</h5>
+                <p class="card-text">Jane Austen, Pride and Predjudice, Frankestein, Farehenite 451.</p>
+                <a href="https://www.gutenberg.org/files/1342/1342-h/1342-h.htm" class="btn btn-primary">Visit Page</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {% end block %}
+        </main>
+    </body>
+</html>

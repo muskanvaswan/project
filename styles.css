@@ -1,0 +1,23 @@
+body {
+  background-image: url("https://i.pinimg.com/originals/fa/c9/b0/fac9b08e5899d3d7cc02d0069b64c9ae.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover; }
+
+.card {
+  background-color: lightblue; }
+
+@media only screen and (max-width: 600px) {
+  .card {
+    background-color: pink; } }
+#index {
+  text-align: center; }
+
+h3, p, ol {
+  color: white; }
+
+.card-text {
+  color: black; }
+
+/*# sourceMappingURL=styles.css.map */
